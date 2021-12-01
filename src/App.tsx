@@ -1,42 +1,28 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Container, Segment } from "semantic-ui-react";
+import Menu from "./components/Menu";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import "./i18n";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <Segment>
+        <Container>
+          <Menu />
+        </Container>
+        <Container>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/producten" element={<Products />} />
+            <Route path="/over-mij" element={<About />} />
+          </Routes>
+        </Container>
+      </Segment>
     </BrowserRouter>
-  );
-};
-
-const Home = () => {
-  return (
-    <>
-      <main>
-        <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
-      </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
-    </>
-  );
-};
-
-const About = () => {
-  return (
-    <>
-      <main>
-        <h2>Who are we?</h2>
-        <p>That feels like an existential question, don't you think?</p>
-      </main>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
-    </>
   );
 };
 
