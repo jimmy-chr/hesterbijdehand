@@ -1,6 +1,11 @@
 import React, { useState } from "react";
-import { Menu as SemanticMenu, MenuItemProps } from "semantic-ui-react";
+import {
+  Dropdown,
+  Menu as SemanticMenu,
+  MenuItemProps,
+} from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 enum MenuItems {
   Home = "home",
@@ -8,7 +13,14 @@ enum MenuItems {
   About = "about",
 }
 
+enum Languages {
+  Dutch = "Nederlands",
+  English = "English",
+}
+
 const Menu = () => {
+  const { t, i18n } = useTranslation();
+
   const [selectedMenuItem, setSelectedMenuItem] = useState<string>(
     MenuItems.Home
   );
@@ -22,6 +34,10 @@ const Menu = () => {
     setSelectedMenuItem(data.name);
   };
 
+  const changeLanguage = (lng?: string) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <>
       <SemanticMenu pointing secondary>
@@ -32,7 +48,7 @@ const Menu = () => {
           as={NavLink}
           to="/"
         >
-          Home
+          {t("home.title")}
         </SemanticMenu.Item>
 
         <SemanticMenu.Item
@@ -42,7 +58,7 @@ const Menu = () => {
           as={NavLink}
           to="/producten"
         >
-          Producten
+          {t("products.title")}
         </SemanticMenu.Item>
 
         <SemanticMenu.Item
@@ -52,7 +68,31 @@ const Menu = () => {
           as={NavLink}
           to="/over-mij"
         >
-          Over mij
+          {t("about-me.title")}
+        </SemanticMenu.Item>
+
+        <SemanticMenu.Item position="right">
+          <Dropdown
+            button
+            className="icon"
+            floating
+            labeled
+            icon="world"
+            options={[
+              {
+                key: "nl",
+                text: Languages.Dutch,
+                value: "nl",
+              },
+              {
+                key: "en",
+                text: Languages.English,
+                value: "en",
+              },
+            ]}
+            defaultValue="nl"
+            onChange={(event, data) => changeLanguage(data.value?.toString())}
+          />
         </SemanticMenu.Item>
       </SemanticMenu>
     </>

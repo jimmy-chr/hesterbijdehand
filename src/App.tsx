@@ -11,6 +11,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <Segment>
+        <Container>Hesterbijdehand</Container>
+      </Segment>
+      <Segment>
         <Container>
           <Menu />
         </Container>
