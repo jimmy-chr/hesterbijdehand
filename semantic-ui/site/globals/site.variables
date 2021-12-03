@@ -1,0 +1,21 @@
+/*******************************
+     User Global Variables
+*******************************/
+@lightGray: #f9f9f9;
+@darkGray: #2a2a2a;
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@headerFont        : 'Lora', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Lora', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@googleFontName    : 'Lora';
+
+/*--------------
+      Page
+---------------*/
+
+@pageBackground: @lightGray;
+@textColor: @darkGray;
+

@@ -1,17 +1,29 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Container, Segment } from "semantic-ui-react";
+import { Container, Header, Icon, Segment } from "semantic-ui-react";
 import Menu from "./components/Menu";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Products from "./pages/Products";
+import Collection from "./pages/Collection";
 import "./i18n";
+import { useTranslation } from "react-i18next";
+import Workshop from "./pages/Workshop";
+import Customized from "./pages/Customized";
+import Contact from "./pages/Contact";
 
 const App = () => {
+  const { t } = useTranslation();
+
   return (
     <BrowserRouter>
       <Segment>
-        <Container>Hesterbijdehand</Container>
+        <Container>
+          <Header as="h1">
+            <Icon name="briefcase" />
+            <Header.Content>{t("header.title")}</Header.Content>
+            <Header.Subheader>{t("header.subtitle")}</Header.Subheader>
+          </Header>
+        </Container>
       </Segment>
       <Segment>
         <Container>
@@ -20,8 +32,11 @@ const App = () => {
         <Container>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/producten" element={<Products />} />
             <Route path="/over-mij" element={<About />} />
+            <Route path="/collectie" element={<Collection />} />
+            <Route path="/atelier" element={<Workshop />} />
+            <Route path="/maatwerk" element={<Customized />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Container>
       </Segment>

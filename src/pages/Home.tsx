@@ -13,7 +13,7 @@ const Home = () => {
       </main>
 
       <nav>
-        <Link to="/producten">{t("products.title")}</Link>
+        <Link to="/collectie">{t("collection.title")}</Link>
         <Link to="/over-mij">{t("about-me.title")}</Link>
       </nav>
     </>

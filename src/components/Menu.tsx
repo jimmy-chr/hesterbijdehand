@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   Dropdown,
+  Icon,
   Menu as SemanticMenu,
   MenuItemProps,
 } from "semantic-ui-react";
@@ -9,8 +10,11 @@ import { useTranslation } from "react-i18next";
 
 enum MenuItems {
   Home = "home",
-  Products = "products",
   About = "about",
+  Collection = "collection",
+  Workshop = "workshop",
+  Customization = "customization",
+  Contact = "contact",
 }
 
 enum Languages {
@@ -48,17 +52,7 @@ const Menu = () => {
           as={NavLink}
           to="/"
         >
-          {t("home.title")}
-        </SemanticMenu.Item>
-
-        <SemanticMenu.Item
-          name={MenuItems.Products}
-          active={selectedMenuItem === MenuItems.Products}
-          onClick={onMenuClick}
-          as={NavLink}
-          to="/producten"
-        >
-          {t("products.title")}
+          <Icon name="home" />
         </SemanticMenu.Item>
 
         <SemanticMenu.Item
@@ -69,6 +63,46 @@ const Menu = () => {
           to="/over-mij"
         >
           {t("about-me.title")}
+        </SemanticMenu.Item>
+
+        <SemanticMenu.Item
+          name={MenuItems.Collection}
+          active={selectedMenuItem === MenuItems.Collection}
+          onClick={onMenuClick}
+          as={NavLink}
+          to="/collectie"
+        >
+          {t("collection.title")}
+        </SemanticMenu.Item>
+
+        <SemanticMenu.Item
+          name={MenuItems.Workshop}
+          active={selectedMenuItem === MenuItems.Workshop}
+          onClick={onMenuClick}
+          as={NavLink}
+          to="/atelier"
+        >
+          {t("workshop.title")}
+        </SemanticMenu.Item>
+
+        <SemanticMenu.Item
+          name={MenuItems.Customization}
+          active={selectedMenuItem === MenuItems.Customization}
+          onClick={onMenuClick}
+          as={NavLink}
+          to="/maatwerk"
+        >
+          {t("customization.title")}
+        </SemanticMenu.Item>
+
+        <SemanticMenu.Item
+          name={MenuItems.Contact}
+          active={selectedMenuItem === MenuItems.Contact}
+          onClick={onMenuClick}
+          as={NavLink}
+          to="/contact"
+        >
+          {t("contact.title")}
         </SemanticMenu.Item>
 
         <SemanticMenu.Item position="right">

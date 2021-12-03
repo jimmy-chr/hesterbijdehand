@@ -1,11 +1,24 @@
 {
+  "header": {
+    "title": "Hesterbijdehand",
+    "subtitle": "Leerbewerking en handtassen op maat"
+  },
   "home": {
     "title": "Thuis"
   },
-  "products": {
-    "title": "Producten"
-  },
   "about-me": {
     "title": "Over mij"
+  },
+  "collection": {
+    "title": "Collectie"
+  },
+  "workshop": {
+    "title": "Atelier"
+  },
+  "customization": {
+    "title": "Maatwerk"
+  },
+  "contact": {
+    "title": "Contact"
   }
 }

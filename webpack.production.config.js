@@ -5,7 +5,13 @@ module.exports = {
   entry: path.join(__dirname, "src", "index.tsx"),
   output: { path: path.join(__dirname, "dist"), filename: "index.bundle.js" },
   mode: process.env.NODE_ENV || "production",
-  resolve: { extensions: [".tsx", ".ts", ".js"] },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+    alias: {
+      "../../theme.config$": path.join(__dirname, "/semantic-ui/theme.config"),
+      "../semantic-ui/site": path.join(__dirname, "/semantic-ui/site"),
+    },
+  },
   devServer: {
     static: "dist",
   },
@@ -32,6 +38,10 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+      },
+      {
+        test: /\.less$/i,
+        use: ["style-loader", "css-loader", "less-loader"],
       },
     ],
   },
