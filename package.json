@@ -5,6 +5,7 @@
   "dependencies": {
     "fomantic-ui-less": "^2.8.8",
     "i18next": "^21.5.4",
+    "pure-react-carousel": "^1.27.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.14.3",
