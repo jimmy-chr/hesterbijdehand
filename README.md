@@ -23,8 +23,12 @@ TODO
   - https://react.semantic-ui.com/layouts/homepage
   - https://react.semantic-ui.com/theming/
 
+- Home Carousel vullen met json objecten
+- Home Teksten van Home naar nl.json
+- Home Footer component
+- DRY
+- Upload naar Google Cloud
 - Layout toevoegen zoals in design
-- Footer component
 - Breadcrumb toevoegen
 
 - Site favicon
