@@ -9,7 +9,9 @@ npm run build
 
 This page is using Semantic UI React with Fomantic UI for theming.
 To overrule default theme settings, update the files in the semantic-ui/site dir.
+
 Some examples:
+
 https://github.com/Semantic-Org/example-github/blob/master/semantic/src/themes/github/globals/site.variables
 
 Check the semantic-ui/themes folder for variable options.
@@ -26,6 +28,7 @@ TODO
 - Home Carousel vullen met json objecten
 - Home Teksten van Home naar nl.json
 - Home Footer component
+- Styling rem
 - DRY
 - Upload naar Google Cloud
 - Layout toevoegen zoals in design
