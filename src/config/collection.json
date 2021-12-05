@@ -1,0 +1,82 @@
+[
+  {
+    "id": "aimant",
+    "name": "Aimant",
+    "description": {
+      "nl": "Nederlandse omschrijving Aimant",
+      "en": "English description Aimant"
+    },
+    "pictures": [
+      {
+        "file": "https://cataas.com/cat"
+      },
+      {
+        "file": "https://cataas.com/cat"
+      },
+      {
+        "file": "https://cataas.com/cat"
+      }
+    ],
+    "carousel": true
+  },
+  {
+    "id": "aimant2",
+    "name": "Aimant2",
+    "description": {
+      "nl": "Nederlandse omschrijving Aimant2",
+      "en": "English description Aimant2"
+    },
+    "pictures": [
+      {
+        "file": "https://cataas.com/cat"
+      },
+      {
+        "file": "https://cataas.com/cat"
+      },
+      {
+        "file": "https://cataas.com/cat"
+      }
+    ],
+    "carousel": true
+  },
+  {
+    "id": "aimant3",
+    "name": "Aimant3",
+    "description": {
+      "nl": "Nederlandse omschrijving Aimant3",
+      "en": "English description Aimant3"
+    },
+    "pictures": [
+      {
+        "file": "https://cataas.com/cat"
+      },
+      {
+        "file": "https://cataas.com/cat"
+      },
+      {
+        "file": "https://cataas.com/cat"
+      }
+    ],
+    "carousel": true
+  },
+  {
+    "id": "aimant4",
+    "name": "Aimant4",
+    "description": {
+      "nl": "Nederlandse omschrijving Aimant4",
+      "en": "English description Aimant4"
+    },
+    "pictures": [
+      {
+        "file": "https://cataas.com/cat"
+      },
+      {
+        "file": "https://cataas.com/cat"
+      },
+      {
+        "file": "https://cataas.com/cat"
+      }
+    ],
+    "carousel": false
+  }
+]

@@ -2,7 +2,7 @@ import { Dot } from "pure-react-carousel";
 import React from "react";
 import { Button, Container, SemanticSIZES } from "semantic-ui-react";
 
-const CustomDotGroup = ({
+const ImageCarouselDots = ({
   slides,
   size = "mini",
 }: {
@@ -23,4 +23,4 @@ const CustomDotGroup = ({
   );
 };
 
-export default CustomDotGroup;
+export default ImageCarouselDots;

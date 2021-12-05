@@ -25,7 +25,6 @@ TODO
   - https://react.semantic-ui.com/layouts/homepage
   - https://react.semantic-ui.com/theming/
 
-- Home Carousel vullen met json objecten
 - Home Teksten van Home naar nl.json
 - Home Footer component
 - Styling rem
