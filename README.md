@@ -1,11 +1,11 @@
 # hesterbijdehand
 
-# commands
+## commands
 
 npm run start
 npm run build
 
-# themes
+## themes
 
 This page is using Semantic UI React with Fomantic UI for theming.
 To overrule default theme settings, update the files in the semantic-ui/site dir.
@@ -16,22 +16,25 @@ https://github.com/Semantic-Org/example-github/blob/master/semantic/src/themes/g
 
 Check the semantic-ui/themes folder for variable options.
 
-TODO
+Some more links that can be useful later on:
 
-- Choose UI library
+- https://semantic-ui-forest.com/
+- https://react.semantic-ui.com/layouts/homepage
+- https://react.semantic-ui.com/theming/
 
-  - https://react.semantic-ui.com/collections/menu/ !
-  - https://semantic-ui-forest.com/ !
-  - https://react.semantic-ui.com/layouts/homepage
-  - https://react.semantic-ui.com/theming/
+## TODO
 
-- Home Teksten van Home naar nl.json
 - Home Footer component
+- Zorgen dat harde URLs werken
 - Styling rem
 - DRY
 - Upload naar Google Cloud
 - Layout toevoegen zoals in design
 - Breadcrumb toevoegen
+
+- json editor
+
+https://json-editor.github.io/json-editor/
 
 - Site favicon
 
