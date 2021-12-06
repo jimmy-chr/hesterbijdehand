@@ -25,7 +25,7 @@ Some more links that can be useful later on:
 ## TODO
 
 - Home Footer component
-- Zorgen dat harde URLs werken
+- Zorgen dat harde URLs werken: https://ui.dev/react-router-cannot-get-url-refresh/
 - Styling rem
 - DRY
 - Upload naar Google Cloud
