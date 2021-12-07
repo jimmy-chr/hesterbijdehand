@@ -24,9 +24,9 @@ Some more links that can be useful later on:
 
 ## TODO
 
-- Home Footer component
-- Zorgen dat harde URLs werken: https://ui.dev/react-router-cannot-get-url-refresh/
-- Styling rem
+- Taal bewaren in cookie / localstorage / url query param
+- Type languages
+- Styling rem + styled components
 - DRY
 - Upload naar Google Cloud
 - Layout toevoegen zoals in design

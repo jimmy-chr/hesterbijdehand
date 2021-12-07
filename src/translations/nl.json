@@ -22,5 +22,11 @@
   },
   "contact": {
     "title": "Contact"
+  },
+  "footer": {
+    "title": "Footer Header",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Amet massa vitae tortor condimentum lacinia quis.",
+    "info": "Info",
+    "services": "Diensten"
   }
 }

@@ -1,46 +1,48 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { Container, Grid, Header, List, Segment } from "semantic-ui-react";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <Segment inverted vertical style={{ padding: "3em 0em", marginTop: "1em" }}>
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <Header inverted as="h4" content="Info" />
-              <List link inverted>
-                <List.Item as="a" href="/over-mij">
-                  Over mij
+              <Header inverted as="h4" content={t("footer.info")} />
+              <List inverted>
+                <List.Item>
+                  <Link to="/over-mij">{t("about-me.title")}</Link>
                 </List.Item>
 
-                <Link to="/contact">
-                  <List.Item as="a">Contact</List.Item>
-                </Link>
-                <Link to="/atelier">
-                  <List.Item as="a">Atelier</List.Item>
-                </Link>
+                <List.Item>
+                  <Link to="/contact">{t("contact.title")}</Link>
+                </List.Item>
+
+                <List.Item>
+                  <Link to="/atelier">{t("workshop.title")}</Link>
+                </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
-              <Header inverted as="h4" content="Diensten" />
+              <Header inverted as="h4" content={t("footer.services")} />
               <List link inverted>
-                <List.Item as="a">Aimant</List.Item>
-                <List.Item as="a">Maatwerk</List.Item>
+                <List.Item>
+                  <Link to="/collectie">Aimant</Link>
+                </List.Item>
+                <List.Item>
+                  <Link to="/maatwerk">{t("customization.title")}</Link>
+                </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
               <Header as="h4" inverted>
-                Footer Header
+                {t("footer.title")}
               </Header>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Dolor sit amet consectetur adipiscing. Venenatis lectus magna
-                fringilla urna porttitor rhoncus dolor. Amet massa vitae tortor
-                condimentum lacinia quis.
-              </p>
+              <p>{t("footer.description")}</p>
             </Grid.Column>
           </Grid.Row>
         </Grid>
