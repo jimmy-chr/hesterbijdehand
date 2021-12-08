@@ -15,7 +15,7 @@ const resources = {
   },
 };
 
-const DETECTION_OPTIONS = {
+const detection = {
   order: ["localStorage", "navigator"],
   caches: ["localStorage"],
 };
@@ -24,9 +24,8 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .use(LanguageDetector)
   .init({
-    detection: DETECTION_OPTIONS,
+    detection: detection,
     resources,
-    fallbackLng: "nl",
     interpolation: {
       escapeValue: false, // react already safes from xss
     },

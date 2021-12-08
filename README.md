@@ -24,7 +24,6 @@ Some more links that can be useful later on:
 
 ## TODO
 
-- Taal bewaren in cookie / localstorage / url query param
 - Type languages
 - Styling rem + styled components
 - DRY
