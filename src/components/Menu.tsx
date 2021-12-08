@@ -22,22 +22,6 @@ enum Languages {
   English = "English",
 }
 
-// TODO
-/*
-const languages = [
-  {
-      id: 'nl',
-      title: 'Dutch',
-      flag: 'nl'
-  },
-  {
-      id: 'en',
-      title: 'English',
-      flag: 'us'
-  }
-];
-*/
-
 const Menu = () => {
   const { t, i18n } = useTranslation();
 

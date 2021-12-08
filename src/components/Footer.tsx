@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Container, Grid, Header, List, Segment } from "semantic-ui-react";
 
 const Footer = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Segment inverted vertical style={{ padding: "3em 0em", marginTop: "1em" }}>
@@ -17,11 +17,9 @@ const Footer = () => {
                 <List.Item>
                   <Link to="/over-mij">{t("about-me.title")}</Link>
                 </List.Item>
-
                 <List.Item>
                   <Link to="/contact">{t("contact.title")}</Link>
                 </List.Item>
-
                 <List.Item>
                   <Link to="/atelier">{t("workshop.title")}</Link>
                 </List.Item>

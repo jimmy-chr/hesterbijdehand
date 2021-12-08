@@ -24,7 +24,6 @@ Some more links that can be useful later on:
 
 ## TODO
 
-- Type languages
 - Styling rem + styled components
 - DRY
 - Upload naar Google Cloud

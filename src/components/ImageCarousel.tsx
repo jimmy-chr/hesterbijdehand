@@ -6,7 +6,7 @@ import collection from "../config/collection.json";
 import { useTranslation } from "react-i18next";
 
 const ImageCarousel = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const language = i18n.language === "en" ? "en" : "nl";
 

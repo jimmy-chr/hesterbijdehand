@@ -10,13 +10,15 @@ const Home = () => {
     <>
       <Grid>
         <Grid.Row>
+          <Grid.Column width={16}>
+            <Header as="h2">{t("home.title")}</Header>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
           <Grid.Column width={4}>
             <Image src="https://cataas.com/cat" />
           </Grid.Column>
-          <Grid.Column width={12}>
-            <Header as="h2">{t("home.header-title")}</Header>
-            {t("home.header-description")}
-          </Grid.Column>
+          <Grid.Column width={12}>{t("home.header-description")}</Grid.Column>
         </Grid.Row>
         <Divider />
         <Grid.Row>
