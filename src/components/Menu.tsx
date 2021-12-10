@@ -25,9 +25,7 @@ enum Languages {
 const Menu = () => {
   const { t, i18n } = useTranslation();
 
-  const [selectedMenuItem, setSelectedMenuItem] = useState<string>(
-    MenuItems.Home
-  );
+  const [selectedMenuItem, setSelectedMenuItem] = useState<string>();
 
   const onMenuClick = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,

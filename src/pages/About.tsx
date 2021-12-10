@@ -15,11 +15,10 @@ const About = () => {
       <Grid.Column width={4}>
         <Image src="https://cataas.com/cat" />
       </Grid.Column>
-      <Grid.Column width={9}>
-        <Image src="/images/wireframe/paragraph.png" />
-      </Grid.Column>
+      <Grid.Column width={12}>{t("about-me.description-1")}</Grid.Column>
+      <Grid.Column width={13}>{t("about-me.description-2")}</Grid.Column>
       <Grid.Column width={3}>
-        <Image src="/images/wireframe/media-paragraph.png" />
+        <Image src="https://cataas.com/cat" />
       </Grid.Column>
     </Grid>
   );
