@@ -13,16 +13,20 @@
     "description-2": "Egestas diam in arcu cursus. Risus ultricies tristique nulla aliquet. Orci a scelerisque purus semper eget duis at tellus at. Est lorem ipsum dolor sit amet consectetur. Pulvinar mattis nunc sed blandit libero volutpat sed. Tincidunt ornare massa eget egestas. Pharetra magna ac placerat vestibulum lectus mauris ultrices. Mattis molestie a iaculis at erat pellentesque adipiscing. Et ultrices neque ornare aenean. Mollis aliquam ut porttitor leo a diam sollicitudin. Varius morbi enim nunc faucibus. Nulla at volutpat diam ut venenatis tellus in. Mi bibendum neque egestas congue quisque egestas diam in arcu. Egestas tellus rutrum tellus pellentesque eu. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Amet cursus sit amet dictum. Sem et tortor consequat id porta nibh venenatis cras. Enim sed faucibus turpis in eu mi. Purus gravida quis blandit turpis cursus in hac habitasse. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum."
   },
   "collection": {
-    "title": "Collectie"
+    "title": "Collectie",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac."
   },
   "workshop": {
-    "title": "Atelier"
+    "title": "Atelier",
+    "description": "Leo integer malesuada nunc vel risus. Sed odio morbi quis commodo odio. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Montes nascetur ridiculus mus mauris vitae ultricies. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec. Et ligula ullamcorper malesuada proin libero nunc. Purus in mollis nunc sed id semper risus in hendrerit. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor. Urna nunc id cursus metus aliquam. Dapibus ultrices in iaculis nunc sed augue lacus. Congue nisi vitae suscipit tellus mauris."
   },
   "customization": {
-    "title": "Maatwerk"
+    "title": "Maatwerk",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et leo duis ut diam quam. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Eget nunc scelerisque viverra mauris. Consectetur lorem donec massa sapien. Diam sit amet nisl suscipit adipiscing bibendum. Leo in vitae turpis massa. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Feugiat vivamus at augue eget arcu dictum. Dui vivamus arcu felis bibendum ut tristique et. Congue quisque egestas diam in arcu cursus euismod quis viverra."
   },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et leo duis ut diam quam. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Eget nunc scelerisque viverra mauris. Consectetur lorem donec massa sapien. Diam sit amet nisl suscipit adipiscing bibendum. Leo in vitae turpis massa. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Feugiat vivamus at augue eget arcu dictum. Dui vivamus arcu felis bibendum ut tristique et. Congue quisque egestas diam in arcu cursus euismod quis viverra."
   },
   "footer": {
     "title": "Footer Header",

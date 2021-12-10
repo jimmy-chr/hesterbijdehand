@@ -17,7 +17,7 @@ const ImageCarousel = () => {
         <Slide index={index} key={item.id}>
           <Grid>
             <Grid.Column width={8}>
-              <Image src={item.pictures[0].file} />
+              <Image src={item.pictures[0].file} size="large" />
             </Grid.Column>
             <Grid.Column width={8}>
               <Header as="h3">{item.name}</Header>
@@ -33,7 +33,7 @@ const ImageCarousel = () => {
       naturalSlideWidth={1}
       naturalSlideHeight={0.5}
       totalSlides={slides.length}
-      isPlaying={false}
+      isPlaying={true}
     >
       <Slider style={{ margin: "auto", maxWidth: "1000px" }}>{slides}</Slider>
       <ImageCarouselDots slides={slides.length} />

@@ -16,7 +16,7 @@ const Home = () => {
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={4}>
-            <Image src="https://cataas.com/cat" />
+            <Image src="https://cataas.com/cat" size="medium" />
           </Grid.Column>
           <Grid.Column width={12}>{t("home.header-description")}</Grid.Column>
         </Grid.Row>

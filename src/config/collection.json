@@ -2,9 +2,17 @@
   {
     "id": "aimant",
     "name": "Aimant",
+    "meta": {
+      "nl": "Meta Aimant NL",
+      "en": "Meta Aimant EN"
+    },
     "description": {
       "nl": "Nederlandse omschrijving Aimant",
       "en": "English description Aimant"
+    },
+    "additional": {
+      "nl": "Additioneel Aimant",
+      "en": "Additional Aimant"
     },
     "pictures": [
       {
@@ -22,9 +30,17 @@
   {
     "id": "aimant2",
     "name": "Aimant2",
+    "meta": {
+      "nl": "Meta Aimant2 NL",
+      "en": "Meta Aimant2 EN"
+    },
     "description": {
       "nl": "Nederlandse omschrijving Aimant2",
       "en": "English description Aimant2"
+    },
+    "additional": {
+      "nl": "Additioneel Aimant2",
+      "en": "Additional Aimant2"
     },
     "pictures": [
       {
@@ -42,9 +58,17 @@
   {
     "id": "aimant3",
     "name": "Aimant3",
+    "meta": {
+      "nl": "Meta Aimant3 NL",
+      "en": "Meta Aimant3 EN"
+    },
     "description": {
       "nl": "Nederlandse omschrijving Aimant3",
       "en": "English description Aimant3"
+    },
+    "additional": {
+      "nl": "Additioneel Aimant3",
+      "en": "Additional Aimant3"
     },
     "pictures": [
       {
@@ -62,9 +86,17 @@
   {
     "id": "aimant4",
     "name": "Aimant4",
+    "meta": {
+      "nl": "Meta Aimant4 NL",
+      "en": "Meta Aimant4 EN"
+    },
     "description": {
       "nl": "Nederlandse omschrijving Aimant4",
       "en": "English description Aimant4"
+    },
+    "additional": {
+      "nl": "Additioneel Aimant4",
+      "en": "Additional Aimant4"
     },
     "pictures": [
       {

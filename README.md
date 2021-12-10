@@ -36,4 +36,5 @@ https://json-editor.github.io/json-editor/
 
 - Site favicon
 
-- Check Responsiveness (burger)
+- Check Responsiveness (burger - SideBar)
+- Sticky voor Menu: https://semantic-ui.com/modules/sticky#/usage
