@@ -22,6 +22,16 @@ Some more links that can be useful later on:
 - https://react.semantic-ui.com/layouts/homepage
 - https://react.semantic-ui.com/theming/
 
+## Firebase hosting
+
+Project Console:
+
+https://console.firebase.google.com/project/hesterbijdehand/overview
+
+Hosting URL:
+
+https://hesterbijdehand.web.app
+
 ## TODO
 
 - Styling rem + styled components
