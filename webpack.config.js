@@ -61,7 +61,7 @@ module.exports = {
       template: path.join(__dirname, "src", "index.html"),
     }),
     new CopyPlugin({
-      patterns: [{ from: "favicon", to: "dist" }],
+      patterns: [{ from: "src/favicon" }],
     }),
   ],
 };

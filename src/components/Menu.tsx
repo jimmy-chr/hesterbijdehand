@@ -122,7 +122,7 @@ const Menu = () => {
                 value: "en",
               },
             ]}
-            defaultValue={i18n.language}
+            defaultValue={i18n.language === "en" ? "en" : "nl"}
             onChange={(event, data) => changeLanguage(data.value?.toString())}
           />
         </SemanticMenu.Item>
