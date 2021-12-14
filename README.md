@@ -22,6 +22,8 @@ Some more links that can be useful later on:
 - https://react.semantic-ui.com/layouts/homepage
 - https://react.semantic-ui.com/theming/
 
+Styled components are imported as a package but not yet used. It seems to be conflicting with the semantic-ui-react. However styled component wrappers can be implemented if necessary.
+
 ## Firebase hosting
 
 Project Console:
@@ -34,10 +36,8 @@ https://hesterbijdehand.web.app
 
 ## TODO
 
-- Styling rem + styled components
-- DRY
-- Upload naar Google Cloud
 - Layout toevoegen zoals in design
+- Modals for images
 - Breadcrumb toevoegen
 
 - json editor

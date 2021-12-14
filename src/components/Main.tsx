@@ -6,6 +6,7 @@ import Collection from "../pages/Collection";
 import Contact from "../pages/Contact";
 import Customized from "../pages/Customized";
 import Home from "../pages/Home";
+import Product from "../pages/Product";
 import Workshop from "../pages/Workshop";
 import Menu from "./Menu";
 
@@ -21,6 +22,7 @@ const Main = () => {
           <Route path="/atelier" element={<Workshop />} />
           <Route path="/maatwerk" element={<Customized />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/collectie/aimant" element={<Product />} />
         </Routes>
       </Segment>
     </Container>

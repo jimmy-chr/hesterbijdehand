@@ -29,7 +29,7 @@ const Footer = () => {
               <Header inverted as="h4" content={t("footer.services")} />
               <List link inverted>
                 <List.Item>
-                  <Link to="/collectie">Aimant</Link>
+                  <Link to="/collectie/aimant">Aimant</Link>
                 </List.Item>
                 <List.Item>
                   <Link to="/maatwerk">{t("customization.title")}</Link>
