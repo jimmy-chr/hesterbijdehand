@@ -22,7 +22,7 @@ const Main = () => {
           <Route path="/atelier" element={<Workshop />} />
           <Route path="/maatwerk" element={<Customized />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/collectie/aimant" element={<Product />} />
+          <Route path="/collectie/:id" element={<Product />} />
         </Routes>
       </Segment>
     </Container>
