@@ -36,7 +36,6 @@ https://hesterbijdehand.web.app
 
 ## TODO
 
-- Modals for images
 - Breadcrumb toevoegen
 - PortalCard in slider
 
