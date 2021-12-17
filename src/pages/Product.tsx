@@ -5,6 +5,7 @@ import { Grid, Image, Item } from "semantic-ui-react";
 import collection from "../config/collection.json";
 import * as S from "./product.styles";
 import Menu from "../components/Menu";
+import ImageModal from "../components/ImageModal";
 
 const Product = () => {
   const { id } = useParams();
@@ -39,6 +40,7 @@ const Product = () => {
   return (
     <>
       <Menu />
+      <ImageModal />
       <Grid>
         <Grid.Row columns={3}>
           <Grid.Column width={8}>

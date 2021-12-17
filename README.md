@@ -36,15 +36,20 @@ https://hesterbijdehand.web.app
 
 ## TODO
 
-- Layout toevoegen zoals in design
 - Modals for images
 - Breadcrumb toevoegen
+- PortalCard in slider
 
 - json editor
 
 https://json-editor.github.io/json-editor/
 
-- Site favicon
-
 - Check Responsiveness (burger - SideBar)
 - Sticky voor Menu: https://semantic-ui.com/modules/sticky#/usage
+
+- Scroll to top
+
+- Echte input
+- Echte styling
+
+- Verkleinen bundle size door styling weg te nemen
