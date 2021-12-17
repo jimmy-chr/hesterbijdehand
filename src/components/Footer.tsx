@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Container, Grid, Header, List, Segment } from "semantic-ui-react";
 
 const Footer = () => {
@@ -15,13 +15,13 @@ const Footer = () => {
               <Header inverted as="h4" content={t("footer.info")} />
               <List inverted>
                 <List.Item>
-                  <Link to="/over-mij">{t("about-me.title")}</Link>
+                  <NavLink to="/over-mij">{t("about-me.title")}</NavLink>
                 </List.Item>
                 <List.Item>
-                  <Link to="/contact">{t("contact.title")}</Link>
+                  <NavLink to="/contact">{t("contact.title")}</NavLink>
                 </List.Item>
                 <List.Item>
-                  <Link to="/atelier">{t("workshop.title")}</Link>
+                  <NavLink to="/atelier">{t("workshop.title")}</NavLink>
                 </List.Item>
               </List>
             </Grid.Column>
@@ -29,10 +29,10 @@ const Footer = () => {
               <Header inverted as="h4" content={t("footer.services")} />
               <List link inverted>
                 <List.Item>
-                  <Link to="/collectie/aimant">Aimant</Link>
+                  <NavLink to="/collectie/aimant">Aimant</NavLink>
                 </List.Item>
                 <List.Item>
-                  <Link to="/maatwerk">{t("customization.title")}</Link>
+                  <NavLink to="/maatwerk">{t("customization.title")}</NavLink>
                 </List.Item>
               </List>
             </Grid.Column>

@@ -8,13 +8,11 @@ import Customized from "../pages/Customized";
 import Home from "../pages/Home";
 import Product from "../pages/Product";
 import Workshop from "../pages/Workshop";
-import Menu from "./Menu";
 
 const Main = () => {
   return (
     <Container>
       <Segment>
-        <Menu />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/over-mij" element={<About />} />

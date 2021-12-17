@@ -1,25 +1,25 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid, Image, Item } from "semantic-ui-react";
 import collection from "../config/collection.json";
 import * as S from "./product.styles";
+import Menu from "../components/Menu";
 
 const Product = () => {
   const { id } = useParams();
   const [selectedImage, setSelectedImage] = useState<number>(0);
-  const [count, setCount] = useState(0);
-
-  console.log(id);
+  const { i18n } = useTranslation();
 
   const item = collection.find((c) => c.id === id);
 
-  console.log(item);
+  const language = i18n.language === "en" ? "en" : "nl";
 
-  const onImageClick = (e: React.MouseEvent, index: number) => {
-    return (event: React.MouseEvent) => {
-      setSelectedImage(index);
-      event.preventDefault();
-    };
+  const onImageClick = (
+    index: number,
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    setSelectedImage(index);
   };
 
   const imageList = item?.pictures.map((picture, index) => {
@@ -27,7 +27,7 @@ const Product = () => {
       <React.Fragment key={picture.file + index}>
         <S.Wrapper
           selected={index === selectedImage}
-          onClick={() => setCount(count + 1)}
+          onClick={(e) => onImageClick(index, e)}
         >
           <Image src={picture.file} size="small" centered />
         </S.Wrapper>
@@ -37,14 +37,35 @@ const Product = () => {
   });
 
   return (
-    <Grid verticalAlign="middle">
-      <Grid.Row columns={2}>
-        <Grid.Column width={10}>
-          <Image src={item?.pictures[selectedImage].file} size="big" centered />
-        </Grid.Column>
-        <Grid.Column width={6}>{imageList}</Grid.Column>
-      </Grid.Row>
-    </Grid>
+    <>
+      <Menu />
+      <Grid>
+        <Grid.Row columns={3}>
+          <Grid.Column width={8}>
+            <Image
+              src={item?.pictures[selectedImage].file}
+              size="big"
+              centered
+            />
+          </Grid.Column>
+          <Grid.Column width={3}>{imageList}</Grid.Column>
+          <Grid.Column width={5}>
+            <Item.Group>
+              <Item>
+                <Item.Content>
+                  <Item.Header>{item?.name}</Item.Header>
+                  <Item.Meta>{item?.meta[language]}</Item.Meta>
+                  <Item.Description>
+                    {item?.description[language]}
+                  </Item.Description>
+                  <Item.Extra>{item?.additional[language]}</Item.Extra>
+                </Item.Content>
+              </Item>
+            </Item.Group>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </>
   );
 };
 

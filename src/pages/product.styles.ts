@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div<{ selected: boolean; onClick: MouseEvent }>`
+export const Wrapper = styled.div<{ selected: boolean }>`
   display: table;
   padding: 5px;
   ${(props) =>
