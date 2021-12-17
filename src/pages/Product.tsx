@@ -23,7 +23,9 @@ const Product = () => {
     setSelectedImage(index);
   };
 
-  const imageList = item?.pictures.map((picture, index) => {
+  if (!item) return null;
+
+  const imageList = item.pictures.map((picture, index) => {
     return (
       <React.Fragment key={picture.file + index}>
         <S.Wrapper
@@ -40,27 +42,28 @@ const Product = () => {
   return (
     <>
       <Menu />
-      <ImageModal />
       <Grid>
         <Grid.Row columns={3}>
           <Grid.Column width={8}>
-            <Image
-              src={item?.pictures[selectedImage].file}
-              size="big"
-              centered
-            />
+            <ImageModal src={item.pictures[selectedImage].file}>
+              <Image
+                src={item.pictures[selectedImage].file}
+                size="big"
+                centered
+              />
+            </ImageModal>
           </Grid.Column>
           <Grid.Column width={3}>{imageList}</Grid.Column>
           <Grid.Column width={5}>
             <Item.Group>
               <Item>
                 <Item.Content>
-                  <Item.Header>{item?.name}</Item.Header>
-                  <Item.Meta>{item?.meta[language]}</Item.Meta>
+                  <Item.Header>{item.name}</Item.Header>
+                  <Item.Meta>{item.meta[language]}</Item.Meta>
                   <Item.Description>
-                    {item?.description[language]}
+                    {item.description[language]}
                   </Item.Description>
-                  <Item.Extra>{item?.additional[language]}</Item.Extra>
+                  <Item.Extra>{item.additional[language]}</Item.Extra>
                 </Item.Content>
               </Item>
             </Item.Group>

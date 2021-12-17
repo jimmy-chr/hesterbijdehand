@@ -1,46 +1,29 @@
 import React from "react";
-import { Button, Header, Image, Modal } from "semantic-ui-react";
+import { Image, Modal } from "semantic-ui-react";
+import * as S from "./image-modal.styles";
 
-function ImageModal() {
+const ImageModal = ({
+  src,
+  children,
+}: {
+  src: string;
+  children: React.ReactNode;
+}) => {
   const [open, setOpen] = React.useState(false);
 
   return (
     <Modal
+      basic
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button>Show Modal</Button>}
+      trigger={<S.Wrapper>{children}</S.Wrapper>}
     >
-      <Modal.Header>Select a Photo</Modal.Header>
-      <Modal.Content image>
-        <Image
-          size="medium"
-          src="https://react.semantic-ui.com/images/avatar/large/rachel.png"
-          wrapped
-        />
-        <Modal.Description>
-          <Header>Default Profile Image</Header>
-          <p>
-            We've found the following gravatar image associated with your e-mail
-            address.
-          </p>
-          <p>Is it okay to use this photo?</p>
-        </Modal.Description>
+      <Modal.Content image onClick={() => setOpen(false)}>
+        <Image size="huge" src={src} />
       </Modal.Content>
-      <Modal.Actions>
-        <Button color="black" onClick={() => setOpen(false)}>
-          Nope
-        </Button>
-        <Button
-          content="Yep, that's me"
-          labelPosition="right"
-          icon="checkmark"
-          onClick={() => setOpen(false)}
-          positive
-        />
-      </Modal.Actions>
     </Modal>
   );
-}
+};
 
 export default ImageModal;
