@@ -36,9 +36,6 @@ https://hesterbijdehand.web.app
 
 ## TODO
 
-- Breadcrumb toevoegen
-- PortalCard in slider
-
 - json editor
 
 https://json-editor.github.io/json-editor/
@@ -52,3 +49,5 @@ https://json-editor.github.io/json-editor/
 - Echte styling
 
 - Verkleinen bundle size door styling weg te nemen
+
+- Breadcrumb toevoegen
