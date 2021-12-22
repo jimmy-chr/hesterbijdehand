@@ -22,7 +22,7 @@ Some more links that can be useful later on:
 - https://react.semantic-ui.com/layouts/homepage
 - https://react.semantic-ui.com/theming/
 
-Styled components are imported as a package but not yet used. It seems to be conflicting with the semantic-ui-react. However styled component wrappers can be implemented if necessary.
+Styled components are available for building wrappers, as overriding the semanti-ui-react components is giving conflicts.
 
 ## Firebase hosting
 
@@ -36,11 +36,10 @@ https://hesterbijdehand.web.app
 
 ## TODO
 
-- json editor
-
-https://json-editor.github.io/json-editor/
-
 - Check Responsiveness (burger - SideBar)
+
+https://react.semantic-ui.com/layouts/homepage/
+
 - Sticky voor Menu: https://semantic-ui.com/modules/sticky#/usage
 
 - Scroll to top
@@ -51,3 +50,13 @@ https://json-editor.github.io/json-editor/
 - Verkleinen bundle size door styling weg te nemen
 
 - Breadcrumb toevoegen
+
+- json editor
+
+https://json-editor.github.io/json-editor/
+
+https://blog.logrocket.com/reading-writing-json-files-nodejs-complete-tutorial/
+
+https://www.geeksforgeeks.org/how-to-send-data-of-html-form-directly-to-json-file/
+
+https://www.contactform.dev/blog/contact-form-with-react-and-php/

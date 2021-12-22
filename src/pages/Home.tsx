@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Grid, Image, Header, Divider } from "semantic-ui-react";
 import ImageCarousel from "../components/ImageCarousel";
 import Menu from "../components/Menu";
+import MenuSidebar from "../components/MenuSidebar";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <>
       <Menu />
+      <MenuSidebar />
       <Grid>
         <Grid.Row>
           <Grid.Column width={16}>

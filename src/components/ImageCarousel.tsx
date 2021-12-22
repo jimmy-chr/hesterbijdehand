@@ -33,7 +33,7 @@ const ImageCarousel = () => {
     .map((item, index) => {
       return (
         <Slide index={index} key={item.id}>
-          <Grid>
+          <Grid padded>
             <Grid.Column width={8}>
               <Card>
                 <Image src={item.pictures[0].file} wrapped ui={false} />
@@ -63,11 +63,11 @@ const ImageCarousel = () => {
       </CarouselProvider>
       <CarouselProvider
         naturalSlideWidth={1}
-        naturalSlideHeight={0.5}
+        naturalSlideHeight={0.8}
         totalSlides={slides.length}
         isPlaying={true}
       >
-        <Slider style={{ margin: "auto", maxWidth: "1000px" }}>
+        <Slider style={{ margin: "auto", maxWidth: "700px" }}>
           {slidesCard}
         </Slider>
         <ImageCarouselDots slides={slidesCard.length} />
