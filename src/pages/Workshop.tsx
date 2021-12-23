@@ -1,14 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Grid, Header, Image } from "semantic-ui-react";
-import Menu from "../components/Menu";
+
+import Page from "../components/Page";
 
 const Workshop = () => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <Menu />
+    <Page>
       <Grid>
         <Grid.Row>
           <Grid.Column width={16}>
@@ -34,7 +34,7 @@ const Workshop = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-    </>
+    </Page>
   );
 };
 

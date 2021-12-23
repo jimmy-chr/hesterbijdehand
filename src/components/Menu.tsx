@@ -3,38 +3,21 @@ import {
   Dropdown,
   Icon,
   Menu as SemanticMenu,
-  MenuItemProps,
+  Sidebar,
 } from "semantic-ui-react";
-import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
-enum MenuItems {
-  Home = "home",
-  About = "about",
-  Collection = "collection",
-  Workshop = "workshop",
-  Customization = "customization",
-  Contact = "contact",
-}
+import MenuItems from "./MenuItems";
+import * as S from "./menu.styles";
 
 enum Languages {
   Dutch = "Nederlands",
   English = "English",
 }
 
-const Menu = () => {
-  const { t, i18n } = useTranslation();
+const Menu = (props: { children: React.ReactNode }) => {
+  const { i18n } = useTranslation();
 
-  const [selectedMenuItem, setSelectedMenuItem] = useState<string>();
-
-  const onMenuClick = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    data: MenuItemProps
-  ) => {
-    if (!data.name) return;
-
-    setSelectedMenuItem(data.name);
-  };
+  const [sidebarOpened, setSidebarOpened] = useState<boolean>(false);
 
   const changeLanguage = (lng?: string) => {
     i18n.changeLanguage(lng);
@@ -42,91 +25,59 @@ const Menu = () => {
 
   return (
     <>
-      <SemanticMenu pointing secondary>
-        <SemanticMenu.Item
-          name={MenuItems.Home}
-          active={selectedMenuItem === MenuItems.Home}
-          onClick={onMenuClick}
-          as={NavLink}
-          to="/"
+      <Sidebar.Pushable>
+        <Sidebar
+          as={SemanticMenu}
+          animation="overlay"
+          vertical
+          visible={sidebarOpened}
         >
-          <Icon name="home" />
-        </SemanticMenu.Item>
+          <MenuItems />
+        </Sidebar>
 
-        <SemanticMenu.Item
-          name={MenuItems.About}
-          active={selectedMenuItem === MenuItems.About}
-          onClick={onMenuClick}
-          as={NavLink}
-          to="/over-mij"
-        >
-          {t("about-me.title")}
-        </SemanticMenu.Item>
+        <Sidebar.Pusher dimmed={sidebarOpened}>
+          <SemanticMenu pointing secondary>
+            <S.MobileMenu>
+              <SemanticMenu.Item
+                onClick={() => setSidebarOpened(!sidebarOpened)}
+              >
+                <Icon name="sidebar" />
+              </SemanticMenu.Item>
+            </S.MobileMenu>
 
-        <SemanticMenu.Item
-          name={MenuItems.Collection}
-          active={selectedMenuItem === MenuItems.Collection}
-          onClick={onMenuClick}
-          as={NavLink}
-          to="/collectie"
-        >
-          {t("collection.title")}
-        </SemanticMenu.Item>
+            <S.DesktopMenu>
+              <MenuItems />
+            </S.DesktopMenu>
 
-        <SemanticMenu.Item
-          name={MenuItems.Workshop}
-          active={selectedMenuItem === MenuItems.Workshop}
-          onClick={onMenuClick}
-          as={NavLink}
-          to="/atelier"
-        >
-          {t("workshop.title")}
-        </SemanticMenu.Item>
-
-        <SemanticMenu.Item
-          name={MenuItems.Customization}
-          active={selectedMenuItem === MenuItems.Customization}
-          onClick={onMenuClick}
-          as={NavLink}
-          to="/maatwerk"
-        >
-          {t("customization.title")}
-        </SemanticMenu.Item>
-
-        <SemanticMenu.Item
-          name={MenuItems.Contact}
-          active={selectedMenuItem === MenuItems.Contact}
-          onClick={onMenuClick}
-          as={NavLink}
-          to="/contact"
-        >
-          {t("contact.title")}
-        </SemanticMenu.Item>
-
-        <SemanticMenu.Item position="right">
-          <Dropdown
-            button
-            className="icon"
-            floating
-            labeled
-            icon="world"
-            options={[
-              {
-                key: "nl",
-                text: Languages.Dutch,
-                value: "nl",
-              },
-              {
-                key: "en",
-                text: Languages.English,
-                value: "en",
-              },
-            ]}
-            defaultValue={i18n.language === "en" ? "en" : "nl"}
-            onChange={(event, data) => changeLanguage(data.value?.toString())}
-          />
-        </SemanticMenu.Item>
-      </SemanticMenu>
+            <SemanticMenu.Item position="right">
+              <Dropdown
+                button
+                className="icon"
+                floating
+                labeled
+                icon="world"
+                options={[
+                  {
+                    key: "nl",
+                    text: Languages.Dutch,
+                    value: "nl",
+                  },
+                  {
+                    key: "en",
+                    text: Languages.English,
+                    value: "en",
+                  },
+                ]}
+                defaultValue={i18n.language === "en" ? "en" : "nl"}
+                onChange={(event, data) =>
+                  changeLanguage(data.value?.toString())
+                }
+              />
+            </SemanticMenu.Item>
+          </SemanticMenu>
+          {props.children}
+        </Sidebar.Pusher>
+      </Sidebar.Pushable>
     </>
   );
 };

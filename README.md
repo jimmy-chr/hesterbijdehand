@@ -60,3 +60,7 @@ https://blog.logrocket.com/reading-writing-json-files-nodejs-complete-tutorial/
 https://www.geeksforgeeks.org/how-to-send-data-of-html-form-directly-to-json-file/
 
 https://www.contactform.dev/blog/contact-form-with-react-and-php/
+
+https://docs.nestjs.com/
+
+- esLint

@@ -4,7 +4,7 @@ import { Grid, Header, Item, Segment } from "semantic-ui-react";
 import collection from "../config/collection.json";
 import { useNavigate } from "react-router-dom";
 import * as S from "./collection.styles";
-import Menu from "../components/Menu";
+import Page from "../components/Page";
 
 const Collection = () => {
   const { t, i18n } = useTranslation();
@@ -33,8 +33,7 @@ const Collection = () => {
   });
 
   return (
-    <>
-      <Menu />
+    <Page>
       <Grid>
         <Grid.Row>
           <Grid.Column width={16}>
@@ -52,7 +51,7 @@ const Collection = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-    </>
+    </Page>
   );
 };
 

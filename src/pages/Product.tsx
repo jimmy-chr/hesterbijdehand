@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 import { Grid, Image, Item } from "semantic-ui-react";
 import collection from "../config/collection.json";
 import * as S from "./product.styles";
-import Menu from "../components/Menu";
 import ImageModal from "../components/ImageModal";
+import Page from "../components/Page";
 
 const Product = () => {
   const { id } = useParams();
@@ -40,8 +40,7 @@ const Product = () => {
   });
 
   return (
-    <>
-      <Menu />
+    <Page>
       <Grid>
         <Grid.Row columns={3}>
           <Grid.Column width={8}>
@@ -70,7 +69,7 @@ const Product = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-    </>
+    </Page>
   );
 };
 

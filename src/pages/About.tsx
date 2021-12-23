@@ -1,14 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Grid, Header, Image, Segment } from "semantic-ui-react";
-import Menu from "../components/Menu";
+import Page from "../components/Page";
 
 const About = () => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <Menu />
+    <Page>
       <Grid>
         <Grid.Row>
           <Grid.Column width={16}>
@@ -22,7 +21,7 @@ const About = () => {
           <p>{t("about-me.description-2")}</p>
         </Segment>
       </Grid>
-    </>
+    </Page>
   );
 };
 
