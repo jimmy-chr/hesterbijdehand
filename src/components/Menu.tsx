@@ -8,6 +8,7 @@ import {
 import { useTranslation } from "react-i18next";
 import MenuItems from "./MenuItems";
 import * as S from "./menu.styles";
+import { Media } from "./MediaContextProvider";
 
 enum Languages {
   Dutch = "Nederlands",
@@ -37,17 +38,17 @@ const Menu = (props: { children: React.ReactNode }) => {
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
           <SemanticMenu pointing secondary>
-            <S.MobileMenu>
+            <Media at="sm">
               <SemanticMenu.Item
                 onClick={() => setSidebarOpened(!sidebarOpened)}
               >
                 <Icon name="sidebar" />
               </SemanticMenu.Item>
-            </S.MobileMenu>
+            </Media>
 
-            <S.DesktopMenu>
+            <S.MediaDesktop greaterThan="sm">
               <MenuItems />
-            </S.DesktopMenu>
+            </S.MediaDesktop>
 
             <SemanticMenu.Item position="right">
               <Dropdown

@@ -36,10 +36,6 @@ https://hesterbijdehand.web.app
 
 ## TODO
 
-- Check Responsiveness (burger - SideBar)
-
-https://react.semantic-ui.com/layouts/homepage/
-
 - Sticky voor Menu: https://semantic-ui.com/modules/sticky#/usage
 
 - Scroll to top

@@ -4,13 +4,16 @@ import "./i18n";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import { MediaContextProvider } from "./components/MediaContextProvider";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
-      <Main />
-      <Footer />
+      <MediaContextProvider>
+        <Header />
+        <Main />
+        <Footer />
+      </MediaContextProvider>
     </BrowserRouter>
   );
 };

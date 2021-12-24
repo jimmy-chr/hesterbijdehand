@@ -1,13 +1,8 @@
 import styled from "styled-components";
+import { Media } from "./MediaContextProvider";
 
-export const MobileMenu = styled.div`
-  @media (min-width: "425px") {
-    visibility: hidden;
-  }
-`;
-
-export const DesktopMenu = styled.div`
-  @media (max-width: "425px") {
-    visibility: hidden;
-  }
+export const MediaDesktop = styled(Media)`
+  display: flex;
+  margin: 0;
+  padding: 0;
 `;
