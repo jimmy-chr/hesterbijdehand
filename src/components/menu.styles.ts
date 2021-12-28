@@ -6,3 +6,7 @@ export const Media = styled(MediaContext)`
   margin: 0;
   padding: 0;
 `;
+
+export const Wrapper = styled.div`
+  background: white;
+`;
