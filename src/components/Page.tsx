@@ -1,12 +1,23 @@
 import React from "react";
+import { Container, Segment } from "semantic-ui-react";
+import { Media } from "./MediaContextProvider";
 import Menu from "./Menu";
-import * as S from "./page.styles";
 
 const Page = (props: { children: React.ReactNode }) => {
   return (
-    <S.Sticky>
-      <Menu>{props.children}</Menu>
-    </S.Sticky>
+    <>
+      <Media at="sm">
+        <Menu>{props.children}</Menu>
+      </Media>
+
+      <Media greaterThan="sm">
+        <Container>
+          <Segment>
+            <Menu>{props.children}</Menu>
+          </Segment>
+        </Container>
+      </Media>
+    </>
   );
 };
 

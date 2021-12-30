@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Container, Segment } from "semantic-ui-react";
 import About from "../pages/About";
 import Collection from "../pages/Collection";
 import Contact from "../pages/Contact";
@@ -11,19 +10,15 @@ import Workshop from "../pages/Workshop";
 
 const Main = () => {
   return (
-    <Container>
-      <Segment>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/over-mij" element={<About />} />
-          <Route path="/collectie" element={<Collection />} />
-          <Route path="/atelier" element={<Workshop />} />
-          <Route path="/maatwerk" element={<Customized />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/collectie/:id" element={<Product />} />
-        </Routes>
-      </Segment>
-    </Container>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/over-mij" element={<About />} />
+      <Route path="/collectie" element={<Collection />} />
+      <Route path="/atelier" element={<Workshop />} />
+      <Route path="/maatwerk" element={<Customized />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/collectie/:id" element={<Product />} />
+    </Routes>
   );
 };
 

@@ -6,6 +6,7 @@ import {
   Ref,
   Sidebar,
   Sticky,
+  Header as SemanticHeader,
 } from "semantic-ui-react";
 import { useTranslation } from "react-i18next";
 import MenuItems from "./MenuItems";
@@ -50,6 +51,9 @@ const Menu = (props: { children: React.ReactNode }) => {
                     style={{ height: "100%" }}
                   >
                     <Icon name="sidebar" />
+                  </SemanticMenu.Item>
+                  <SemanticMenu.Item>
+                    <SemanticHeader as="h2">Hesterbijdehand</SemanticHeader>
                   </SemanticMenu.Item>
                 </S.Media>
 
