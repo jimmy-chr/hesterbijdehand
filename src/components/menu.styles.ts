@@ -9,4 +9,5 @@ export const Media = styled(MediaContext)`
 
 export const Wrapper = styled.div`
   background: white;
+  margin-bottom: 1rem;
 `;

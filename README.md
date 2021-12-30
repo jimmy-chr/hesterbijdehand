@@ -36,7 +36,7 @@ https://hesterbijdehand.web.app
 
 ## TODO
 
-- Sticky voor Menu: https://semantic-ui.com/modules/sticky#/usage
+- Mobile Header Menu update (fix footer, hide header, update menubar)
 
 - Scroll to top
 

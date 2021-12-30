@@ -4,13 +4,15 @@ import "./i18n";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import { MediaContextProvider } from "./components/MediaContextProvider";
+import { Media, MediaContextProvider } from "./components/MediaContextProvider";
 
 const App = () => {
   return (
     <BrowserRouter>
       <MediaContextProvider>
-        <Header />
+        <Media greaterThan="sm">
+          <Header />
+        </Media>
         <Main />
         <Footer />
       </MediaContextProvider>
