@@ -7,7 +7,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <Segment inverted vertical style={{ padding: "3em 0em", marginTop: "1em" }}>
+    <Segment inverted vertical style={{ padding: "3em 0em" }}>
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>

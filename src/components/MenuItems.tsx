@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { Icon, Menu as SemanticMenu, MenuItemProps } from "semantic-ui-react";
@@ -12,7 +12,11 @@ enum MenuItem {
   Contact = "contact",
 }
 
-const MenuItems = () => {
+const MenuItems = ({
+  setSidebarOpened,
+}: {
+  setSidebarOpened?: Dispatch<SetStateAction<boolean>>;
+}) => {
   const [selectedMenuItem, setSelectedMenuItem] = useState<string>();
   const { t } = useTranslation();
 
@@ -21,6 +25,7 @@ const MenuItems = () => {
     data: MenuItemProps
   ) => {
     setSelectedMenuItem(data.name);
+    setSidebarOpened && setSidebarOpened(false);
   };
 
   return (

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Media as MediaContext } from "./MediaContextProvider";
+import { Segment } from "semantic-ui-react";
 
 export const Media = styled(MediaContext)`
   display: flex;
@@ -9,5 +10,9 @@ export const Media = styled(MediaContext)`
 
 export const Wrapper = styled.div`
   background: white;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+`;
+
+export const MobileSegment = styled(Segment)`
+  border: 0 !important;
 `;

@@ -32,7 +32,7 @@ const Product = () => {
           selected={index === selectedImage}
           onClick={(e) => onImageClick(index, e)}
         >
-          <Image src={picture.file} size="small" centered />
+          <Image src={picture.file} size="small" centered rounded />
         </S.Wrapper>
         <br />
       </React.Fragment>
@@ -49,6 +49,7 @@ const Product = () => {
                 src={item.pictures[selectedImage].file}
                 size="big"
                 centered
+                rounded
               />
             </ImageModal>
           </Grid.Column>

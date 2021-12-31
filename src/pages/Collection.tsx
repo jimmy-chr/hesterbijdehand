@@ -20,7 +20,7 @@ const Collection = () => {
     return (
       <Item key={item.id} onClick={() => goToProduct(item.id)}>
         <S.Wrapper>
-          <Item.Image size="medium" src={item.pictures[0].file} />
+          <Item.Image size="medium" src={item.pictures[0].file} rounded />
           <Item.Content>
             <Item.Header>{item.name}</Item.Header>
             <Item.Meta>{item.meta[language]}</Item.Meta>

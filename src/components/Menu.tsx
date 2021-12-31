@@ -7,10 +7,12 @@ import {
   Sidebar,
   Sticky,
   Header as SemanticHeader,
+  Segment,
 } from "semantic-ui-react";
 import { useTranslation } from "react-i18next";
 import MenuItems from "./MenuItems";
 import * as S from "./menu.styles";
+import { Media } from "./MediaContextProvider";
 
 enum Languages {
   Dutch = "NL",
@@ -36,8 +38,9 @@ const Menu = (props: { children: React.ReactNode }) => {
             animation="overlay"
             vertical
             visible={sidebarOpened}
+            onHide={() => setSidebarOpened(false)}
           >
-            <MenuItems />
+            <MenuItems setSidebarOpened={setSidebarOpened} />
           </Sidebar>
         </Sticky>
 
@@ -89,7 +92,10 @@ const Menu = (props: { children: React.ReactNode }) => {
               </SemanticMenu>
             </S.Wrapper>
           </Sticky>
-          {props.children}
+          <Media at="sm">
+            <S.MobileSegment>{props.children}</S.MobileSegment>
+          </Media>
+          <Media greaterThan="sm">{props.children}</Media>
         </Sidebar.Pusher>
       </Sidebar.Pushable>
     </Ref>

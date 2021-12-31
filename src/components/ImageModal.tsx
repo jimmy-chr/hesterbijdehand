@@ -20,7 +20,7 @@ const ImageModal = ({
       trigger={<S.Wrapper>{children}</S.Wrapper>}
     >
       <Modal.Content image onClick={() => setOpen(false)}>
-        <Image size="huge" src={src} />
+        <Image size="huge" src={src} rounded />
       </Modal.Content>
     </Modal>
   );

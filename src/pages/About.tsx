@@ -15,9 +15,19 @@ const About = () => {
           </Grid.Column>
         </Grid.Row>
         <Segment basic>
-          <Image src="https://cataas.com/cat" size="small" floated="left" />
+          <Image
+            src="https://cataas.com/cat"
+            size="small"
+            floated="left"
+            rounded
+          />
           <p>{t("about-me.description-1")}</p>
-          <Image src="https://cataas.com/cat" size="medium" floated="right" />
+          <Image
+            src="https://cataas.com/cat"
+            size="medium"
+            floated="right"
+            rounded
+          />
           <p>{t("about-me.description-2")}</p>
         </Segment>
       </Grid>

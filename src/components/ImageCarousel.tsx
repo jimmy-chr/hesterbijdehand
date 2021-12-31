@@ -17,7 +17,7 @@ const ImageCarousel = () => {
         <Slide index={index} key={item.id}>
           <Grid>
             <Grid.Column width={8}>
-              <Image src={item.pictures[0].file} size="large" />
+              <Image src={item.pictures[0].file} size="large" rounded />
             </Grid.Column>
             <Grid.Column width={8}>
               <Header as="h3">{item.name}</Header>

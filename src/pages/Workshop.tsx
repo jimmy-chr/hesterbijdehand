@@ -22,15 +22,15 @@ const Workshop = () => {
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Image src="https://cataas.com/cat" size="large" centered />
+            <Image src="https://cataas.com/cat" size="large" centered rounded />
           </Grid.Column>
           <Grid.Column width={8}>
-            <Image src="https://cataas.com/cat" size="large" centered />
+            <Image src="https://cataas.com/cat" size="large" centered rounded />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Image src="https://cataas.com/cat" size="large" centered />
+            <Image src="https://cataas.com/cat" size="large" centered rounded />
           </Grid.Column>
         </Grid.Row>
       </Grid>

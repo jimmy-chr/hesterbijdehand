@@ -21,13 +21,13 @@ const Customized = () => {
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={5}>
-            <Image src="https://cataas.com/cat" size="large" centered />
+            <Image src="https://cataas.com/cat" size="large" centered rounded />
           </Grid.Column>
           <Grid.Column width={6}>
-            <Image src="https://cataas.com/cat" size="large" centered />
+            <Image src="https://cataas.com/cat" size="large" centered rounded />
           </Grid.Column>
           <Grid.Column width={5}>
-            <Image src="https://cataas.com/cat" size="large" centered />
+            <Image src="https://cataas.com/cat" size="large" centered rounded />
           </Grid.Column>
         </Grid.Row>
       </Grid>
