@@ -36,10 +36,6 @@ https://hesterbijdehand.web.app
 
 ## TODO
 
-- Mobile Header Menu update (fix footer, hide header, update menubar)
-
-- Scroll to top
-
 - Echte input
 - Echte styling
 
