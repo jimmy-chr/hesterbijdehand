@@ -16,6 +16,7 @@ module.exports = {
       "../../theme.config$": path.join(__dirname, "/semantic-ui/theme.config"),
       "../semantic-ui/site": path.join(__dirname, "/semantic-ui/site"),
     },
+    fallback: { url: false },
   },
   devServer: {
     static: "dist",
@@ -44,7 +45,26 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              url: {
+                filter: (url) => {
+                  // Semantic-UI-CSS has an extra semi colon in one of the URL due to which CSS loader along
+                  // with webpack 5 fails to generate a build.
+                  // Below if condition is a hack. After Semantic-UI-CSS fixes this, one can replace use clause with just
+                  // use: ['style-loader', 'css-loader']
+                  if (url.includes("charset=utf-8;;")) {
+                    return false;
+                  }
+                  return true;
+                },
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -52,7 +72,28 @@ module.exports = {
       },
       {
         test: /\.less$/i,
-        use: ["style-loader", "css-loader", "less-loader"],
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              url: {
+                filter: (url) => {
+                  // Semantic-UI-CSS has an extra semi colon in one of the URL due to which CSS loader along
+                  // with webpack 5 fails to generate a build.
+                  // Below if condition is a hack. After Semantic-UI-CSS fixes this, one can replace use clause with just
+                  // use: ['style-loader', 'css-loader']
+                  if (url.includes("charset=utf-8;;")) {
+                    return false;
+                  }
+                  return true;
+                },
+              },
+            },
+          },
+          ,
+          "less-loader",
+        ],
       },
     ],
   },
