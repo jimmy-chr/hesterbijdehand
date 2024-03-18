@@ -4,11 +4,13 @@
 @lightGray: #f9f9f9;
 @darkGray: #2a2a2a;
 
+@importGoogleFonts : true;
+
 /*-------------------
        Fonts
 --------------------*/
 
-@headerFont        : 'Lora', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont        : 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @pageFont          : 'Lora', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @googleFontName    : 'Lora';
 

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Grid, Header, Image } from "semantic-ui-react";
 import Page from "../components/Page";
 
-const Customized = () => {
+const Maintenance = () => {
   const { t } = useTranslation();
 
   return (
@@ -11,12 +11,12 @@ const Customized = () => {
       <Grid>
         <Grid.Row>
           <Grid.Column width={16}>
-            <Header as="h2">{t("customization.title")}</Header>
+            <Header as="h2">{t("maintenance.title")}</Header>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={16}>
-            <p>{t("customization.description")}</p>
+            <p>{t("maintenance.description")}</p>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -35,4 +35,4 @@ const Customized = () => {
   );
 };
 
-export default Customized;
+export default Maintenance;
