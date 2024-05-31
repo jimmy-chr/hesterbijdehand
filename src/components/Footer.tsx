@@ -15,13 +15,10 @@ const Footer = () => {
               <Header inverted as="h4" content={t("footer.info")} />
               <List inverted>
                 <List.Item>
-                  <NavLink to="/over-mij">{t("about-me.title")}</NavLink>
+                  <NavLink to="/verhaal">{t("story.title")}</NavLink>
                 </List.Item>
                 <List.Item>
                   <NavLink to="/contact">{t("contact.title")}</NavLink>
-                </List.Item>
-                <List.Item>
-                  <NavLink to="/atelier">{t("workshop.title")}</NavLink>
                 </List.Item>
               </List>
             </Grid.Column>
@@ -32,7 +29,7 @@ const Footer = () => {
                   <NavLink to="/collectie/aimant">Aimant</NavLink>
                 </List.Item>
                 <List.Item>
-                  <NavLink to="/maatwerk">{t("customization.title")}</NavLink>
+                  <NavLink to="/onderhoud">{t("maintenance.title")}</NavLink>
                 </List.Item>
               </List>
             </Grid.Column>

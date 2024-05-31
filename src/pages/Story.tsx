@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Grid, Header, Image, Segment } from "semantic-ui-react";
 import Page from "../components/Page";
 
-const About = () => {
+const Story = () => {
   const { t } = useTranslation();
 
   return (
@@ -11,7 +11,7 @@ const About = () => {
       <Grid>
         <Grid.Row>
           <Grid.Column width={16}>
-            <Header as="h2">{t("about-me.title")}</Header>
+            <Header as="h2">{t("story.title")}</Header>
           </Grid.Column>
         </Grid.Row>
         <Segment basic>
@@ -21,18 +21,18 @@ const About = () => {
             floated="left"
             rounded
           />
-          <p>{t("about-me.description-1")}</p>
+          <p>{t("story.description-1")}</p>
           <Image
             src="https://cataas.com/cat"
             size="medium"
             floated="right"
             rounded
           />
-          <p>{t("about-me.description-2")}</p>
+          <p>{t("story.description-2")}</p>
         </Segment>
       </Grid>
     </Page>
   );
 };
 
-export default About;
+export default Story;

@@ -30,7 +30,9 @@ const Product = () => {
       <React.Fragment key={picture.file + index}>
         <S.Wrapper
           selected={index === selectedImage}
-          onClick={(e) => onImageClick(index, e)}
+          onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) =>
+            onImageClick(index, e)
+          }
         >
           <Image src={picture.file} size="small" centered rounded />
         </S.Wrapper>

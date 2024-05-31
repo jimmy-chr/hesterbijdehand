@@ -16,7 +16,6 @@ const Header = () => {
       <Segment>
         <Container>
           <SemanticHeader as="h1">
-            <Icon name="briefcase" />
             <SemanticHeader.Content>{t("header.title")}</SemanticHeader.Content>
             <SemanticHeader.Subheader>
               {t("header.subtitle")}

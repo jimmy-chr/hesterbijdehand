@@ -20,7 +20,7 @@ enum Languages {
 }
 
 const Menu = (props: { children: React.ReactNode }) => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const contextRef = useRef(null);
 
   const [sidebarOpened, setSidebarOpened] = useState<boolean>(false);
@@ -56,7 +56,14 @@ const Menu = (props: { children: React.ReactNode }) => {
                     <Icon name="sidebar" />
                   </SemanticMenu.Item>
                   <SemanticMenu.Item>
-                    <SemanticHeader as="h2">Hesterbijdehand</SemanticHeader>
+                    <SemanticHeader as="h2">
+                      <SemanticHeader.Content>
+                        {t("header.title")}
+                      </SemanticHeader.Content>
+                      <SemanticHeader.Subheader>
+                        {t("header.subtitle")}
+                      </SemanticHeader.Subheader>
+                    </SemanticHeader>
                   </SemanticMenu.Item>
                 </S.Media>
 

@@ -5,10 +5,9 @@ import { Icon, Menu as SemanticMenu, MenuItemProps } from "semantic-ui-react";
 
 enum MenuItem {
   Home = "home",
-  About = "about",
   Collection = "collection",
-  Workshop = "workshop",
-  Customization = "customization",
+  Story = "story",
+  Maintenance = "maintenance",
   Contact = "contact",
 }
 
@@ -41,16 +40,6 @@ const MenuItems = ({
       </SemanticMenu.Item>
 
       <SemanticMenu.Item
-        name={MenuItem.About}
-        active={selectedMenuItem === MenuItem.About}
-        onClick={onMenuClick}
-        as={NavLink}
-        to="/over-mij"
-      >
-        {t("about-me.title")}
-      </SemanticMenu.Item>
-
-      <SemanticMenu.Item
         name={MenuItem.Collection}
         active={selectedMenuItem === MenuItem.Collection}
         onClick={onMenuClick}
@@ -61,23 +50,23 @@ const MenuItems = ({
       </SemanticMenu.Item>
 
       <SemanticMenu.Item
-        name={MenuItem.Workshop}
-        active={selectedMenuItem === MenuItem.Workshop}
+        name={MenuItem.Story}
+        active={selectedMenuItem === MenuItem.Story}
         onClick={onMenuClick}
         as={NavLink}
-        to="/atelier"
+        to="/verhaal"
       >
-        {t("workshop.title")}
+        {t("story.title")}
       </SemanticMenu.Item>
 
       <SemanticMenu.Item
-        name={MenuItem.Customization}
-        active={selectedMenuItem === MenuItem.Customization}
+        name={MenuItem.Maintenance}
+        active={selectedMenuItem === MenuItem.Maintenance}
         onClick={onMenuClick}
         as={NavLink}
-        to="/maatwerk"
+        to="/onderhoud"
       >
-        {t("customization.title")}
+        {t("maintenance.title")}
       </SemanticMenu.Item>
 
       <SemanticMenu.Item
