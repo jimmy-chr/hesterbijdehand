@@ -16,14 +16,14 @@ const Story = () => {
         </Grid.Row>
         <Segment basic>
           <Image
-            src="https://cataas.com/cat"
+            src="/assets/images/verhaal-hester1.jpg"
             size="small"
             floated="left"
             rounded
           />
           <p>{t("story.description-1")}</p>
           <Image
-            src="https://cataas.com/cat"
+            src="/assets/images/verhaal-hester2.jpg"
             size="medium"
             floated="right"
             rounded

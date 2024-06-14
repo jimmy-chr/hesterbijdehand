@@ -16,10 +16,10 @@
     },
     "pictures": [
       {
-        "file": "./assets/images/aimant1.jpg"
+        "file": "/assets/images/aimant1.jpg"
       },
       {
-        "file": "./assets/images/aimant2.jpg"
+        "file": "/assets/images/aimant2.jpg"
       }
     ],
     "carousel": true
@@ -41,13 +41,13 @@
     },
     "pictures": [
       {
-        "file": "assets/images/maisa1.jpg"
+        "file": "/assets/images/maisa1.jpg"
       },
       {
-        "file": "assets/images/maisa2.jpg"
+        "file": "/assets/images/maisa2.jpg"
       },
       {
-        "file": "assets/images/maisa3.jpg"
+        "file": "/assets/images/maisa3.jpg"
       }
     ],
     "carousel": true
@@ -69,13 +69,13 @@
     },
     "pictures": [
       {
-        "file": "assets/images/eclair1.jpg"
+        "file": "/assets/images/eclair1.jpg"
       },
       {
-        "file": "assets/images/eclair2.jpg"
+        "file": "/assets/images/eclair2.jpg"
       },
       {
-        "file": "assets/images/eclair3.jpg"
+        "file": "/assets/images/eclair3.jpg"
       }
     ],
     "carousel": true
@@ -97,13 +97,13 @@
     },
     "pictures": [
       {
-        "file": "assets/images/dokterstas1.jpg"
+        "file": "/assets/images/dokterstas1.jpg"
       },
       {
-        "file": "assets/images/dokterstas2.jpg"
+        "file": "/assets/images/dokterstas2.jpg"
       },
       {
-        "file": "assets/images/dokterstas3.jpg"
+        "file": "/assets/images/dokterstas3.jpg"
       }
     ],
     "carousel": false
