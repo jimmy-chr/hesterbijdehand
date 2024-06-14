@@ -16,97 +16,94 @@
     },
     "pictures": [
       {
-        "file": "https://cataas.com/cat"
+        "file": "./assets/images/aimant1.jpg"
       },
       {
-        "file": "https://cataas.com/cat"
-      },
-      {
-        "file": "https://cataas.com/cat"
+        "file": "./assets/images/aimant2.jpg"
       }
     ],
     "carousel": true
   },
   {
-    "id": "aimant2",
-    "name": "Aimant2",
+    "id": "maisa",
+    "name": "Maisa",
     "meta": {
-      "nl": "Meta Aimant2 NL",
-      "en": "Meta Aimant2 EN"
+      "nl": "Meta Maisa NL",
+      "en": "Meta Maisa EN"
     },
     "description": {
-      "nl": "Nederlandse omschrijving Aimant2",
-      "en": "English description Aimant2"
+      "nl": "Nederlandse omschrijving Maisa",
+      "en": "English description Maisa"
     },
     "additional": {
-      "nl": "Additioneel Aimant2",
-      "en": "Additional Aimant2"
+      "nl": "Additioneel Maisa",
+      "en": "Additional Maisa"
     },
     "pictures": [
       {
-        "file": "https://cataas.com/cat"
+        "file": "assets/images/maisa1.jpg"
       },
       {
-        "file": "https://cataas.com/cat"
+        "file": "assets/images/maisa2.jpg"
       },
       {
-        "file": "https://cataas.com/cat"
+        "file": "assets/images/maisa3.jpg"
       }
     ],
     "carousel": true
   },
   {
-    "id": "aimant3",
-    "name": "Aimant3",
+    "id": "eclair",
+    "name": "Éclair",
     "meta": {
-      "nl": "Meta Aimant3 NL",
-      "en": "Meta Aimant3 EN"
+      "nl": "Meta Éclair NL",
+      "en": "Meta Éclair EN"
     },
     "description": {
-      "nl": "Nederlandse omschrijving Aimant3",
-      "en": "English description Aimant3"
+      "nl": "Nederlandse omschrijving Éclair",
+      "en": "English description Éclair"
     },
     "additional": {
-      "nl": "Additioneel Aimant3",
-      "en": "Additional Aimant3"
+      "nl": "Additioneel Éclair",
+      "en": "Additional Éclair"
     },
     "pictures": [
       {
-        "file": "https://cataas.com/cat"
+        "file": "assets/images/eclair1.jpg"
       },
       {
-        "file": "https://cataas.com/cat"
+        "file": "assets/images/eclair2.jpg"
       },
       {
-        "file": "https://cataas.com/cat"
+        "file": "assets/images/eclair3.jpg"
       }
     ],
     "carousel": true
   },
   {
-    "id": "aimant4",
-    "name": "Aimant4",
+    "id": "dokterstas",
+    "name": "Dokterstas",
     "meta": {
-      "nl": "Meta Aimant4 NL",
-      "en": "Meta Aimant4 EN"
+      "nl": "Meta Dokterstas NL",
+      "en": "Meta Dokterstas EN"
     },
     "description": {
-      "nl": "Nederlandse omschrijving Aimant4",
-      "en": "English description Aimant4"
+      "nl": "Nederlandse omschrijving Dokterstas",
+      "en": "English description Dokterstas"
     },
     "additional": {
-      "nl": "Additioneel Aimant4",
-      "en": "Additional Aimant4"
+      "nl": "Additioneel Dokterstas",
+      "en": "Additional Dokterstas"
     },
     "pictures": [
       {
-        "file": "https://cataas.com/cat"
+        "file": "assets/images/dokterstas1.jpg"
       },
       {
-        "file": "https://cataas.com/cat"
+        "file": "assets/images/dokterstas2.jpg"
       },
       {
-        "file": "https://cataas.com/cat"
+        "file": "assets/images/dokterstas3.jpg"
       }
     ],
     "carousel": false
