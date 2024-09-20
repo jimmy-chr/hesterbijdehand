@@ -10,6 +10,9 @@
 @lightOrange: #F1D6B8;
 @cherryBlossomPink: #FBACBE;
 
+@darkGreen: #0a5d00;
+@darkerGreen: #063B00;
+
 @importGoogleFonts : true;
 
 /*-------------------
@@ -25,5 +28,5 @@
 ---------------*/
 
 @pageBackground: @lightOrange;
-@textColor: @darkGray;
+@textColor: @darkerGreen;
 
