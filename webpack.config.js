@@ -102,7 +102,10 @@ module.exports = {
       template: path.join(__dirname, "src", "index.html"),
     }),
     new CopyPlugin({
-      patterns: [{ from: "src/favicon" }],
+      patterns: [
+        { from: "src/favicon" },
+        { from: "src/assets/images", to: "assets/images" },
+      ],
     }),
   ],
 };

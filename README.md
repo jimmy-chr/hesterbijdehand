@@ -56,3 +56,11 @@ https://www.contactform.dev/blog/contact-form-with-react-and-php/
 https://docs.nestjs.com/
 
 - esLint
+
+- Color combo
+
+A18276 beaver
+B9D2B1 celadon
+DAC6B5 dun
+F1D6B8 light orange
+FBACBE cherry blossom pink
